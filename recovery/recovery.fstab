@@ -1,0 +1,9 @@
+/dev/block/platform/hi_mci.0/by-name/boot		        /boot				emmc	    defaults		                                 recoveryonly
+/dev/block/platform/hi_mci.0/by-name/recovery	        /recovery			emmc	    defaults		                                 recoveryonly
+/dev/block/platform/hi_mci.0/by-name/misc                /misc               emmc        defaults                                         recoveryonly
+
+/dev/block/platform/hi_mci.0/by-name/system              /system             ext4        ro                                               wait
+/dev/block/platform/hi_mci.0/by-name/cust				/cust				ext4		defaults										 defaults
+/dev/block/platform/hi_mci.0/by-name/cache               /cache              ext4        noatime,nosuid,nodev,discard                     wait,check
+/dev/block/platform/hi_mci.0/by-name/userdata            /data               ext4        noatime,nosuid,nodev,discard,noauto_da_alloc     wait,check,encryptable=footer,length=-16384
+/devices/hi_mci.0/mmc_host/mmc1                          auto                auto        defaults                                         voldmanaged=sdcard1:auto,noemulatedsd
