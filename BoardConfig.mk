@@ -80,14 +80,13 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
 TARGET_PREBUILT_RECOVERY_KERNEL := device/huawei/hwmt7_l09/kernel
-#TARGET_RECOVERY_INITRC := device/huawei/hwmt7_l09/recovery/init.rc
 
 #TWRP
 TARGET_RECOVERY_FSTAB := device/huawei/hwmt7_l09/recovery/twrp.fstab
 HAVE_SELINUX := true
 TW_HAS_MTP := true
 TW_ALWAYS_RMRF := true
-TW_NO_CPU_TEMP := true
+TW_NO_CPU_TEMP := flase
 TW_THEME := portrait_hdpi
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
@@ -97,4 +96,5 @@ TW_EXTERNAL_STORAGE_PATH := "/sdcard"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 TW_INTERNAL_STORAGE_PATH := "/data/share/0"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/Battery"
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/hisi_fb.1048577/leds/lcd_backlight0/brightness"
