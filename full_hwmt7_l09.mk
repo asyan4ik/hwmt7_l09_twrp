@@ -5,7 +5,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_LOCALES += en_US
 
-# Inherit from h60-l02 device
+# Inherit from hwmt7_l09 device
 $(call inherit-product, device/huawei/hwmt7_l09/device_hwmt7_l09.mk)
 
 ## Device identifier. This must come after all inclusions
