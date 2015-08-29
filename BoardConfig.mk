@@ -98,3 +98,4 @@ TW_INTERNAL_STORAGE_PATH := "/data/share/0"
 TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
 TW_CUSTOM_BATTERY_PATH := "/sys/class/power_supply/Battery"
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/hisi_fb.1048577/leds/lcd_backlight0/brightness"
+TW_BOARD_CUSTOM_GRAPHICS := device/huawei/hwmt7_l09/recovery/graphics.c
